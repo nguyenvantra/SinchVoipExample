@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (call == null) {
-                    call = mSinchClient.getCallClient().callPhoneNumber("+84937406429");
+                    call = mSinchClient.getCallClient().callPhoneNumber("");
                     call.addCallListener(new SinchCallListener());
                     btnCall.setText("Hang Up");
                 } else {
